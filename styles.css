@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --headerOpacity: 1;
+    --headerScale: 1;
+}
+
+@mixin coverer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+#video-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &, video {
+        @include coverer;
+    }
+      video {
+        background: black;
+        object-fit: cover;
+    }
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+main {
+    background: #370e45;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    padding: 1rem;
+    margin-top: 100vh;
+    &::before {
+      content: "";
+      @include coverer;
+      top: -100vh;
+    }
+}
+
+main h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+main p {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.games {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 70px
+}
+
+.rps, .etch {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.games img {
+    height: 60vh;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.games img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
