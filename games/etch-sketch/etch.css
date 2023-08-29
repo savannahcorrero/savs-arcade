@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    font-family: 'Abel', sans-serif;
+}
+
+/* CENTER EVERYTHING / HERO TXT STYLE */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+/* BOARD + BUTTONS */
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50;
+    margin-left: -200px;
+}
+
+.size button {
+    font-size: 20px;
+    width: 85px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.size h4 {
+    font-size: 20px;
+}
+
+.board {
+    display: block;
+    margin-left: 80px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid;
+}
+
+.bottom button {
+    font-size: 20px;
+    width: 85px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin-top: 20px;
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2p', cursive;
+    background-color: #1c2e4a;
+    color: #fff;
+}
+
+button img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.main {
+    font-size: 45px;
+}
+
+.mainp {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* RESULT BANNER */
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.result p {
+    text-align: center;
+    width: 525px;
+    box-shadow: 0 0 10px 5px #fff;
+    border-radius: 2%;
+    padding: 15px;
+}
+
+/* SCOREBOARD */
+.outcome {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.badge {
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+.score {
+    text-align: center;
+    font-size: 40px;
+    background-color: #fff;
+    color: #1c2e4a;
+    width: 196px;
+    padding: 10px;
+    border: 2px #1c2e4a solid;
+}
+
+.user, .computer {
+    box-shadow: 0 0 9px 3px white;
+}
+
+/* USER BTNS */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    margin-top: 75px;
+    max-width: 55%;
+    box-shadow: 0 0 10px 5px #fff;
+    padding: 7px;
+    padding-top: 13px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESET */
+.resetDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.resetDiv button {
+    font-size: 20px;
+    box-shadow: 0 0 9px 3px #fff;
+    border-radius: 5%;
+    padding: 20px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* RESET PULSE */
+.reset-focus {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 0px #fff;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 12px 0 #fff;
+    }
+    70% {
+        box-shadow: 0 0 0 3px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #fff;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 12px 0 #fff;
+    }
+    70% {
+        box-shadow: 0 0 0 3px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #fff;
+    }
+  }

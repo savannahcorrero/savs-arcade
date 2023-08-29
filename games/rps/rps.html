@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="rps.css">
+    <title>ROCK PAPER SCISSORS</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="main">ROCK PAPER SCISSORS</div>
+        <p class="mainp">First to 5 wins!</p>
+    </div>
+
+    <div class="result">
+        <p>TAKE YOUR PICK</p>
+    </div>
+
+    <div class="outcome">
+        <div class="user">
+            <div class="badge">USER</div>
+            <div class="score" id="userScore">0</div>
+        </div>
+        <div class="computer">
+            <div class="badge">COMPUTER</div>
+            <div class="score" id="compScore">0</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <button id="btn" class="userChoice" value="ROCK"><img src="content/rock.png" alt="Rock"></button>
+        <button id="btn" class="userChoice" value="PAPER"><img src="content/paper.png" alt="Paper"></button>
+        <button id="btn" class="userChoice" value="SCISSORS"><img src="content/scissors.png" alt="Scissors"></button>
+    </div>
+
+    <div class="resetDiv">
+        <button id="reset" onclick="resetGame()">RESET</button>
+    </div>
+
+    <script src="rps.js"></script>
+
+</body>
+</html>
