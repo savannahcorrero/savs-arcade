@@ -24,6 +24,7 @@ body {
     background-size: cover;
 }
 
+/* VIDEO */
 #video-bg {
     width: 100vw;
     height: 100vh;
@@ -45,9 +46,86 @@ video {
     object-fit: cover;
 }
 
+
+/* ARROWS */
+.arrow {   
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 48.4%;
+    width: 50px;
+    height: 50px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid #ff68ff;
+    border-bottom: 2px solid #ff68ff;
+    margin: 0 0 3px 4px;
+}
+
+.arw-one, .arw-two, .arw-three {
+    -webkit-animation: arw-scroll 1s infinite;
+    -moz-animation: arw-scroll 1s infinite;
+    animation: arw-scroll 1s infinite;
+  
+}
+
+.arw-one {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    animation-delay: alternate;
+}
+
+.arw-two {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    animation-delay: .2s;
+    animation-direction: alternate;
+    margin-top: -20px;
+}
+
+.arw-three {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+    animation-delay: .3s;
+    animation-direction: alternate;
+    margin-top: -40px;
+}
+
+@-webkit-keyframes arw-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes arw-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes arw-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes arw-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+
+/* GAME CONTENT */
 main {
     background: #370e45;
-    color: #fff;
+    color: #ff68ff;
     height: 100vh;
     position: relative;
     padding: 1rem;
@@ -62,9 +140,9 @@ main {
 main h1 {
     font-family: 'Press Start 2P', cursive;
     font-weight: 100;
-    font-size: 60px;
+    font-size: 67px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 main p {
@@ -72,7 +150,7 @@ main p {
     font-weight: 100;
     font-size: 18px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 85px;
 }
 
 .games {
@@ -80,7 +158,7 @@ main p {
     display: flex;
     justify-content: center;
     gap: 200px;
-    margin-top: 70px
+    margin-top: 45px
 }
 
 .rps, .etch {
@@ -107,5 +185,5 @@ main p {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #1096dc;
 }
