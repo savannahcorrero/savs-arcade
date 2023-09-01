@@ -8,24 +8,39 @@
     <title>ETCH-A-SKETCH</title>
 </head>
 <body>
-    <h1>Etch-a-Sketch</h1>
-
-    <p id="message"></p>
-
-    <div class="main">
-        <div class="size">
-            <h4>Select Grid Size</h4>
-            <button class="btn btn-outline-secondary" onclick="sizeOne()">16x16</button>
-            <button class="btn btn-outline-info" onclick="sizeTwo()">32x32</button>
-            <button class="btn btn-outline-primary" onclick="sizeThree()">64x64</button>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../content/arcade-logo.svg"></a>
         </div>
-        <div class="board"></div>
-    </div>    
+        <nav>
+            <a href="../../index.html">HOME</a>
+            <a href="etch.html">ETCH-A-SKETCH</a>
+            <a href="../rps/rps.html">ROCK PAPER SCISSORS</a>
+        </nav>    
+    </div>
 
-    <div class="bottom">
-        <button class="btn btn-dark" onclick="setColor('black')">Black</button>
-        <button class="btn btn-info" onclick="setColor('random')">Random</button>
-        <button class="btn btn-primary" onclick="resetBoard()">Reset</button>
+    <div class="page-content">
+        <h1>Etch-a-Sketch</h1>
+
+        <p id="message"></p>
+
+        <div class="main">
+            <div class="size">
+                <h4>Select Grid Size</h4>
+                <button class="btn btn-outline-light" onclick="sizeOne()">16 x 16</button>
+                <button class="btn btn-outline-info" onclick="sizeTwo()">32 x 32</button>
+                <button class="btn btn-outline-primary" onclick="sizeThree()">64 x 64</button>
+            </div>
+            <div class="board"></div>
+        </div>    
+
+        <div class="bottom">
+            <button class="btn btn-dark" onclick="setColor('black')">BLACK</button>
+            <button class="btn btn-info" onclick="setColor('random')">RANDOM</button>
+            <button class="btn btn-primary" onclick="resetBoard()">RESET</button>
+        </div>
+
+        <div class="footer">Copyright © 2023 SavWebDev</div>
     </div>
 </body>
 </html>

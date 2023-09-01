@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 * {
-    font-family: 'Press Start 2p', cursive;
-    background-color: #1c2e4a;
-    color: #fff;
+    margin: 0;
 }
 
 button img {
@@ -12,83 +11,157 @@ button img {
     object-fit: cover;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c31;
+    color: #1096dc;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+
+/* NAV BAR */
+.navbar {
+    font-family: 'Abel', sans-serif;
+    background-color: #370e45;
+    width: 100vw;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0 8px 6px -6px #ff68ff;
+    -moz-box-shadow: 0 8px 6px -6px #ff68ff;
+    box-shadow: 0 8px 6px -6px #ff68ff;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1096dc;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 17px;
+    margin-right: 25px;
+    margin-top: 43px;
+}
+
+nav a:hover {
+    color: #ff68ff;
+}
+
+nav a.active {
+    color: #ff68ff;
+}
+
+
 /* HERO */
 .hero {
     text-align: center;
     padding: 20px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .main {
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .mainp {
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: #ff68ff;
 }
 
-/* RESULT BANNER */
-.result {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    margin-top: -20px;
-}
-
-.result p {
-    text-align: center;
-    width: 525px;
-    box-shadow: 0 0 10px 5px #fff;
-    border-radius: 2%;
-    padding: 15px;
-}
 
 /* SCOREBOARD */
 .outcome {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
+    gap: 800px;
 }
 
 .badge {
     text-align: center;
-    font-size: 20px;
-    width: 200px;
-    padding: 10px;
+    font-size: 28px;
+    color: #ff68ff;
+    -webkit-box-shadow: 0 8px 6px -6px #ff68ff;
+    -moz-box-shadow: 0 8px 6px -6px #ff68ff;
+    box-shadow: 0 8px 6px -6px #ff68ff;
 }
 
 .score {
     text-align: center;
     font-size: 40px;
-    background-color: #fff;
-    color: #1c2e4a;
-    width: 196px;
-    padding: 10px;
-    border: 2px #1c2e4a solid;
+    width: 170px;
+    margin-top: 10px;
 }
 
-.user, .computer {
-    box-shadow: 0 0 9px 3px white;
+
+/* RESULT BANNER */
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: -85px;
 }
+
+.result p {
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 8px 3px #ff68ff;
+    border-radius: 2%;
+    padding: 10px;
+}
+
 
 /* USER BTNS */
 .container {
     display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    margin-top: 75px;
+    justify-content: center;
+    margin: 40px auto;
     max-width: 55%;
-    box-shadow: 0 0 10px 5px #fff;
+    padding-top: 50px;
+    gap: 150px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 7px;
-    padding-top: 13px;
+}
+
+.option figcaption {
+    margin-top: -35px;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
 }
 
 button {
     background: none;
     border: none;
     cursor: pointer;
+    box-shadow: 0 0 10px 5px #ff68ff;
+}
+
+button img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-top: -10px;
 }
 
 /* RESET */
@@ -96,16 +169,19 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
+    padding-bottom: 8px;
 }
 
 .resetDiv button {
+    font-family: 'Love Ya Like A Sister', cursive;
     font-size: 20px;
-    box-shadow: 0 0 9px 3px #fff;
+    box-shadow: 0 0 8px 3px #ff68ff;
     border-radius: 5%;
-    padding: 20px;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+    color: #1096dc;
 }
 
 /* RESET PULSE */
@@ -114,31 +190,49 @@ button {
     margin-top: -10px;
     margin-bottom: 20px;
     border-radius: 5%;
-    box-shadow: 0px 0px 5px 0px #fff;
+    box-shadow: 0px 0px 5px 1px #ff68ff;
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
 }
 
 @-webkit-keyframes pulse {
     0% {
-      box-shadow: 0 0 12px 0 #fff;
+      box-shadow: 0 0 5px 3px #ff68ff;
     }
     70% {
-        box-shadow: 0 0 0 3px #fff;
+        box-shadow: 0 0 3px 7px #ff68ff;
     }
     100% {
-        box-shadow: 0 0 0 0 #fff;
+        box-shadow: 0 0 3px 3px #ff68ff;
     }
   }
   
   @keyframes pulse {
     0% {
-      box-shadow: 0 0 12px 0 #fff;
+      box-shadow: 0 0 5px 3px #ff68ff;
     }
     70% {
-        box-shadow: 0 0 0 3px #fff;
+        box-shadow: 0 0 3px 7px #ff68ff;
     }
     100% {
-        box-shadow: 0 0 0 0 #fff;
+        box-shadow: 0 0 3px 3px #ff68ff;
     }
-  }
+}
+
+
+/* FOOTER */
+.footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    height: 75px;
+    background-color: #370e45;
+    color: #1096dc;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    -webkit-box-shadow: 0px -1px 3px #ff68ff;
+    -moz-box-shadow: 0px -1px 3px #ff68ff;
+    box-shadow: 0px -1px 3px #ff68ff;
+}

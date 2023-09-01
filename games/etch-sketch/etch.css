@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 * {
-    font-family: 'Abel', sans-serif;
+    margin: 0;
 }
 
-/* CENTER EVERYTHING / HERO TXT STYLE */
 body {
     display: flex;
     flex-direction: column;
@@ -12,15 +12,70 @@ body {
     align-items: center;
 }
 
+/* NAV BAR */
+.navbar {
+    font-family: 'Abel', sans-serif;
+    background-color: #370e45;
+    width: 100vw;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0 8px 6px -6px #ff68ff;
+    -moz-box-shadow: 0 8px 6px -6px #ff68ff;
+    box-shadow: 0 8px 6px -6px #ff68ff;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    margin-left: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1096dc;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 17px;
+    margin-right: 25px;
+    margin-top: 43px;
+}
+
+nav a:hover {
+    color: #ff68ff;
+}
+
+nav a.active {
+    color: #ff68ff;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c31;
+    color: #1096dc;
+}
+
+
+/* HERO TXT STYLE */
 body h1 {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: -2px;
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 
 /* BOARD + BUTTONS */
 .main {
     display: flex;
     flex-direction: row;
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 
 .size {
@@ -33,10 +88,11 @@ body h1 {
 
 .size button {
     font-size: 20px;
-    width: 85px;
+    width: 90px;
     height: auto;
     margin-top: 15px;
     margin-bottom: 30px;
+    padding: 4px;
 }
 
 .size h4 {
@@ -44,20 +100,23 @@ body h1 {
 }
 
 .board {
+    background-color: #fff;
     display: block;
-    margin-left: 80px;
+    margin-left: 60px;
     width: 500px;
     height: 500px;
     display: grid;
-    border: 1px solid;
+    box-shadow: 0 0 10px 3px #ff68ff;
 }
 
 .bottom button {
     font-size: 20px;
-    width: 85px;
+    width: 90px;
     height: auto;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 30px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    padding: 4px;
 }
 
 .bottom {
@@ -67,4 +126,26 @@ body h1 {
     align-items: center;
     width: 500px;
     margin-top: 20px;
+}
+
+button {
+    box-shadow: 0 0 4px 2px #ff68ff;
+}
+
+
+/* FOOTER */
+.footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    height: 75px;
+    background-color: #370e45;
+    color: #1096dc;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    -webkit-box-shadow: 0px -1px 3px #ff68ff;
+    -moz-box-shadow: 0px -1px 3px #ff68ff;
+    box-shadow: 0px -1px 3px #ff68ff;
 }

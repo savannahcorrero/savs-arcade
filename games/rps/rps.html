@@ -6,14 +6,20 @@
     <title>ROCK PAPER SCISSORS</title>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../content/arcade-logo.svg"></a>
+        </div>
+        <nav>
+            <a href="../../index.html">HOME</a>
+            <a href="../etch-sketch/etch.html">ETCH-A-SKETCH</a>
+            <a href="rps.html">ROCK PAPER SCISSORS</a>
+        </nav>    
+    </div>
     
     <div class="hero">
         <div class="main">ROCK PAPER SCISSORS</div>
         <p class="mainp">First to 5 wins!</p>
-    </div>
-
-    <div class="result">
-        <p>TAKE YOUR PICK</p>
     </div>
 
     <div class="outcome">
@@ -27,15 +33,30 @@
         </div>
     </div>
 
+    <div class="result">
+        <p>TAKE YOUR PICK</p>
+    </div>
+
     <div class="container">
-        <button id="btn" class="userChoice" value="ROCK"><img src="content/rock.png" alt="Rock"></button>
-        <button id="btn" class="userChoice" value="PAPER"><img src="content/paper.png" alt="Paper"></button>
-        <button id="btn" class="userChoice" value="SCISSORS"><img src="content/scissors.png" alt="Scissors"></button>
+        <div class="option">
+            <button id="btn" class="userChoice" value="ROCK"><img src="content/rock.svg" alt="Rock"></button>
+            <figcaption>ROCK</figcaption>
+        </div>
+        <div class="option">
+            <button id="btn" class="userChoice" value="PAPER"><img src="content/paper.svg" alt="Paper"></button>
+            <figcaption>PAPER</figcaption>
+        </div>
+        <div class="option">
+            <button id="btn" class="userChoice" value="SCISSORS"><img src="content/scissors.svg" alt="Scissors"></button>
+            <figcaption>SCISSORS</figcaption>
+        </div>
     </div>
 
     <div class="resetDiv">
         <button id="reset" onclick="resetGame()">RESET</button>
     </div>
+
+    <div class="footer">Copyright © 2023 SavWebDev</div>
 
     <script src="rps.js"></script>
 

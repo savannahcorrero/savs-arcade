@@ -68,6 +68,8 @@ function setColor(colorChoice) {
 
 /* RESET BOARD */
 function resetBoard() {
-    let divs = document.querySelectorAll("div");
-    divs.forEach((div) => div.style.backgroundColor = "white")
+    let boardElements = document.querySelectorAll(".board div");
+    for (let div of boardElements) {
+        div.style.backgroundColor = "white";
+    }
 }
